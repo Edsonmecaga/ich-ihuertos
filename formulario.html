@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Contacto | Ichi´i Huertos</title>
+        <link rel="stylesheet" href="css/ichiihuerto.css"><!-- Vinculación a los estilos css -->
+    
+        <meta charset="utf-8">
+    
+        <meta name="author" content="Edson Garduño Robles">
+    
+         <meta name="author" charset="UTF-8">
+    
+        <meta name="description" content="Sitio para comprar huertos, asi como asistencia en su cuidado">
+    
+    </head>
+    <body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Index.html">Inicio</a>
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="formulario.html">Contacto</a>
+                <a href="#">Galeria</a>
+                <a href="#">Equipo</a>
+            </div>
+        </nav>
+
+         <div class="header__img"><!-- Clase para poner la imagen de fondo  -->
+            <a href="#">
+                <img class="header_img" src="img/header.jpg" alt=""><!-- Imagen de fondo -->
+                <div class="centrado_txt"><!-- Clase para el texto  -->
+                    <h1> Ichi´i Huertos</h1>
+                </div>
+                <div class="centrado_img">
+                    <img  class="centrado_img" src="img/Ichii logo.png" alt=""  >
+                </div>
+            </a>
+            
+        </div>
+    </header>
+
+    <div class="suscription"><!-- Clase para agrupar el formulario -->
+        <form action="" method="POST" id="form">
+            <div class="form">
+                <h1 class="title">Registro</h1><!-- Nombre de formulario -->
+                <div class="grupo">
+                    <input type="name" name="" id="name" required ><span class="barra" ></span>
+                    <label for="">Nombre</label><!-- Etiqueta para el nombre -->
+                </div>
+                <div class="grupo">
+                    <input type="email" name="" id="name" required  placeholder="edson@example.com" > <span class="barra" ></span><!-- Por la animación que quiero aplicar el placeholder no va ya que la animación perderia sentido como en esta línea -->
+                    <label for="">e-mail</label><!-- Etiqueta para el e-mail -->
+                </div>
+                <div class="grupo">
+                    <input type="password" name="" id="name" required ><span class="barra" ></span>
+                    <label for="">Contraseña</label><!-- Eiqueta para contraseña -->
+                </div>
+                <div class="grupo">
+                    <input type="text" name="city" id="name"  required list="city"><span class="barra" ></span>
+                    <label for="">Ciudad</label><!-- Etiqueta para ciudad  -->
+                    <datalist id="city">
+                    <option>Quer&eacute;taro</option><!-- Opcion de ciudad 1 -->
+                    <option>CDMX</option><!-- Opcion de ciudad 2 -->
+                    <option>Acapulco</option><!-- Opcion de ciudad 3 -->
+                    <option>Toluca</option><!-- Opcion de ciudad 4 -->
+                    </datalist>
+
+                </div>
+                    <div class="grupo">
+                    <input type="color" name="" id="name" required><span class="barra" ></span>
+                    <label for="">Color</label><!-- Etiqueta para el color -->
+                    </div>
+                <div class="grupo">
+                    <input type="range" name="" id="name" required list="price" ><span class="barra" ></span>
+                    <label for="">Rango de precio</label><!-- Etiqueta para el rango -->
+                    <datalist id="price">
+
+                        <option value="50" value="bajo">
+                      
+                        <option value="500" value="medio">
+                      
+                        <option value="1000" value="alto">
+                      
+                      </datalist>
+                </div>
+                <button type="reset" class="delete">Borrar Todo</button>
+                <button type="submit" class="send">Suscr&iacute;bete</button>
+            </div>
+    
+        </form>
+
+    </div>
+    
+    </body>
+<footer>
+    <div class="root_footer">
+        <img src="img/root footer.png" class="root_footer" alt=""  >
+        <h6 class="text_footer"> Todos los derechor reservados &copy;   </h6><!-- Información de los derechos de la página -->
+        
+    </div>
+   
+</footer>
+
+    
+
+
+
+</html>
