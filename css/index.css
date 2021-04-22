@@ -1,0 +1,327 @@
+/* * ============================== */
+/* * =====GENERALES DEL SITIO====== */
+/* * ============================== */
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* * ============================== */
+/* * =====  MENU DEL INICIO  ====== */
+/* * ============================== */
+
+a{
+    font-family:'Montserrat', sans-serif;/* Fuentes */
+    text-decoration: none;/* Sin decoración de texto para quitar lo subrayado */
+    
+}
+
+
+.container {/* Estilos del contenedor del menú */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    color: beige;
+}
+
+.navbar {/* Estilos de cada casilla */
+	background: #9e5706;;
+    position: sticky;
+    top: 0 ;
+    
+    
+}
+
+.navbar a {/* Estilos de las etiquetas a en las casillas  */
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover { /* Estilos para animar mientras el cursor está arriba de los botones */
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* * ============================== */
+/* * =====IMAGEN DEL MENU FONDO==== */
+/* * ============================== */
+
+
+.header_img{
+    width: 100%;/* Anho al 100% */
+    height: 635px;/* Altura para que abarque toda la pantalla principal */
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+    
+}
+
+
+.centrado_txt{/*Clase para el Nombre de la empresa */
+    position: absolute;
+    top: 70%;/* Altura para que el texto quede debajo del logotipo */
+    left: 50%;/* Alineación izquierda al 50% para que este centrado */
+    transform: translate(-50%, -50%);/* Posición centrada */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: oblique;
+}
+
+
+.centrado_img{/* Clase para el Logotipo */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* * ============================== */
+/* * =====  TITULOS DE LOS DIV ==== */
+/* * ============================== */
+
+.titulo{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* * ============================== */
+/* * ====INF. PROPOSITO EMPRESA==== */
+/* * ============================== */
+
+
+.proposito{/* estilos del contenedor para poder aplicar el aside para imagen y texto */
+    max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.proposito_img{/* Estilos de la imagen alusiva a los propósitos  */
+    border-radius: 10%;/* Redondeo de bordes */
+    
+}
+.proposito_txt{/* Estilo del texto del propósito  */
+   width:90%;
+   margin-bottom: 20px;
+   line-height: 30px;
+   color: #525151;
+    
+}
+
+
+
+/* * ============================== */
+/* * ===  VIDEO DEL PROPOSITO   === */
+/* * ============================== */
+
+.video {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 320px;
+    }
+
+    
+
+
+/* * ============================== */
+/* * ===TABLA DE MEDIDAS HUERTOS=== */
+/* * ============================== */
+table{
+    padding: 80px;
+    width: 100%;
+    border: 1px solid #1caf28;
+    padding: 8px;
+}
+
+th, td{
+    width: 25%;
+    border: 1px solid #1caf28;
+    text-align: center;
+}
+.medidas{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+    
+}
+.icon{/* La imagen en la tabla no la puse muestreada porque no encontre un contexto en el que pudiera poner una imagen de fondo y la estética de la página se perdería */
+    width: 20px;
+    height: 15px;
+}
+
+
+/* * ============================== */
+/* * ===TITULOS DE LOS HUERTOS=== */
+/* * ============================== */
+
+
+main {/* Contiene todas las clases para poder dividir la informacion en pantalla */
+	min-height: 100vh;
+}
+
+main .huertos p {/* Informacion de los huertos */
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #525151;
+}
+
+
+.contenedor {/* Contenido de la informacion */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+/* * ============================== */
+/* * ===== MENU ASIDE HUERTOS  ==== */
+/* * ============================== */
+
+
+.anclas {/* Estilos menú de anclas  */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    
+}
+
+.menu {/* Contenedor de toda la informacion del menu de huertos */
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #9e5706;
+	padding: 20px;
+	border-radius: 3px;
+    position: sticky;
+    top: 20px;
+}
+.menu .title {/* Titulo del menu*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+.menu .indice__anclas a {/* Titulos de los huertos  */
+	display: block;
+	margin-bottom: 10px;
+	color: #FFCD48;
+}
+
+
+
+/* * ============================== */
+/* * ===== ETIQUETAS DE TEXTO  ==== */
+/* * ============================== */
+
+
+p{
+    text-align: justify;
+    font-family: helvetica; 
+    font-variant: initial; 
+    margin-bottom: 20px;
+	line-height: 30px;
+    padding: 40px;
+}
+
+h1, h6{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+h4, h3{
+    text-align: center; 
+    color:#009933;
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+
+
+
+
+/* * ============================== */
+/* * ===IMAGENES GENERALES INDEX=== */
+/* * ============================== */
+
+.index_img{
+    display:block;
+    margin:auto;
+    width: 500;
+    height: 300px;
+    align-content: center;
+    border-radius: 10%;/* Redondea el brode de las imagenes */
+    transition: .5s;
+
+}
+
+
+.index_img:hover{/* Animacion cuando el cursor se encuentra sobre la imagen */
+    display:block;
+    align-content: center;
+    transition: all .5s ease-out;
+    width: 550;/* Aumenta el width en 10% al pasar el cursor */
+    height: 330px;/* Aumeta el height en 10% al pasar el cursor */
+
+
+}
+
+/* * ============================== */
+/* * ===         FOOTER         === */
+/* * ============================== */
+
+.root_footer{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.text_footer{
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    transition: 2s;
+}
+
+
+
+
+
+
+

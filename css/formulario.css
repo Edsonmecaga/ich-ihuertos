@@ -1,0 +1,212 @@
+/* * ============================== */
+/* * =====GENERALES DEL SITIO====== */
+/* * ============================== */
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* * ============================== */
+/* * =====  MENU DEL INICIO  ====== */
+/* * ============================== */
+
+a{
+    font-family:'Montserrat', sans-serif;/* Fuentes */
+    text-decoration: none;/* Sin decoración de texto para quitar lo subrayado */
+    
+}
+
+
+.container {/* Estilos del contenedor del menú */
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    color: beige;
+}
+
+.navbar {/* Estilos de cada casilla */
+	background: #9e5706;
+    position: sticky;
+    top: 0 ;
+    
+    
+}
+
+.navbar a {/* Estilos de las etiquetas a en las casillas  */
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover { /* Estilos para animar mientras el cursor está arriba de los botones */
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* * ============================== */
+/* * =====IMAGEN DEL MENU FONDO==== */
+/* * ============================== */
+
+
+.header_img{
+    width: 100%;/* Anho al 100% */
+    height: 635px;/* Altura para que abarque toda la pantalla principal */
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+    
+}
+
+
+.centrado_txt{/*Clase para el Nombre de la empresa */
+    position: absolute;
+    top: 70%;/* Altura para que el texto quede debajo del logotipo */
+    left: 50%;/* Alineación izquierda al 50% para que este centrado */
+    transform: translate(-50%, -50%);/* Posición centrada */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: oblique;
+}
+
+
+.centrado_img{/* Clase para el Logotipo */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+/* * ============================== */
+/* * =====    FORMULARIO     ====== */
+/* * ============================== */
+
+
+:root{
+    --colorTextos:#7c4404;/* Variable para aplicar el color de texto a todos los requerimientos del formulario */
+}
+.suscription{
+    padding-top: 40px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{/* Título del formulario */
+    text-align: center;
+    font-weight: 700px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #009933;/* Color standard de la página */
+}
+
+form{
+    background: hsla(0, 0%, 57%, 0.184);/* Color background de todo el formulario */
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 15px;/* Bordes redondeados del formulario */
+}
+
+.form{/* Clase form */
+    width: 100%;
+    margin: auto;
+}
+
+.form .grupo{
+    position: relative;
+    margin: 45px;
+    
+
+    
+}
+
+input{/* Entradas */
+    background: none;
+    color: #52ce7b;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display:block;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos) ;/* Se ocupa la vaiable de los colores */
+    width: 100%;
+}
+
+input:focus{/* Focus en las entradas */
+    outline: none;
+    color: #6fb887;
+}
+
+label{
+    color: var(--colorTextos);/* Se ocupa la vaiable de los colores */
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all ;
+    pointer-events: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+input:focus~label, /* Cuando se esta trabajando en la parte del input los hermanos label ejecutan el estilo*/
+input:valid~label{/* Cuando la entrada es validada conforme al formato del input se mantiene el estilo de animación */
+    top: -15px;/* Aparenta que el texto sube */
+    font-size: 12px;/* El texto asemeja que se aleja al hacerse más pequeño */
+    color: #009933;/* El color cambia  */
+    
+
+}
+
+.delete{/* Clase del botón borrar todo */
+    border: none;
+    background: none;
+    font-family: sans-serif;
+    cursor: pointer;/* Cusor diferente  */
+
+}
+
+.send{/* Botón borrar */
+    border: none;
+    padding: 15px;
+    width: 80%;
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#00993385;
+    cursor: pointer;
+}
+
+
+/* * ============================== */
+/* * ===         FOOTER         === */
+/* * ============================== */
+
+.root_footer{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.text_footer{
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    transition: 2s;
+    color: white;
+}
+   
